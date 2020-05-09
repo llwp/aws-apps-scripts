@@ -1,7 +1,7 @@
 # aws-apps-scripts
 An interface to authenticate AWS api requests from within google apps scripts.
 
-How to use:
+## How to use:
 
 1. Create a new project in google scripts.
 
@@ -27,3 +27,7 @@ function myFunction() {
   ...
 }
 ```
+
+Note that the current API version for EC2 is `2016-11-15` which is listed on the [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html) page along with change history.
+
+The reference for the [Amazon Endpoint](https://docs.aws.amazon.com/apigateway/api-reference/making-http-requests/) for the `service` parameter is available in the <b>Amazon API Gateway REST API Reference</b>.  Within that documentation, here is the [DescribeInstances](https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspaces.html) reference for additional parameters and options.
